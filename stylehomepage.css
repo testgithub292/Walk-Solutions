@@ -131,7 +131,7 @@ html, body {
 }
 
 .gradient-text {
-    background: linear-gradient(45deg, #a4a0a0, #5d5757);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -271,7 +271,7 @@ html, body {
 
 .trusted-label {
     text-align: center;
-    color: var(--text-light);
+    /* color: var(--text-light); */
     margin-bottom: 3rem;
     font-size: 1.125rem;
 }
@@ -284,7 +284,7 @@ html, body {
     gap: 2rem;
 }
 
-.logo-item {
+/* .logo-item {
     opacity: 0.6;
     transition: var(--transition);
     filter: grayscale(100%);
@@ -294,7 +294,7 @@ html, body {
     opacity: 1;
     filter: grayscale(0%);
     transform: scale(1.1);
-}
+} */
 
 .logo-item img {
     height: 30px;
@@ -519,9 +519,9 @@ html, body {
 /* Premium CTA */
 .cta-premium {
     padding: 6rem 0;
-    background: var(--gradient);
-    color: white;
-    text-align: center;
+    /* background: var(--gradient); */
+    color: black;
+    text-align: left !important;
 }
 
 .cta-content h2 {
@@ -539,7 +539,7 @@ html, body {
 .cta-actions {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
@@ -609,7 +609,10 @@ html, body {
     }
     
     
-    
+      #press-row{
+           display: block;
+           text-align: center;
+        }
    
     
    
@@ -618,6 +621,8 @@ html, body {
         width: 90%;
     }
 }
+
+
 
 @media (max-width: 576px) {
     .hero-title {
@@ -803,13 +808,13 @@ html, body {
 .marquee-item img {
     height: 35px;
     width: auto;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: var(--transition);
 }
 
-.marquee-item:hover img {
+/* .marquee-item:hover img {
     filter: grayscale(0%);
-}
+} */
 
 @keyframes marqueeScroll {
     0% {
@@ -826,10 +831,10 @@ html, body {
 }
 
 /* Payment Methods Section */
-.payment-methods-section {
-    padding: 6rem 0;
+/* .payment-methods-section {
+    padding: 1rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
+} */
 
 .payment-content h2 {
     font-size: 2.5rem;
@@ -884,7 +889,7 @@ html, body {
 
 /* Beyond Payments Section */
 .beyond-payments-section {
-    padding: 6rem 0;
+    padding: 2rem 0;
     background: white;
 }
 
@@ -1138,6 +1143,9 @@ html, body {
     .carousel-card {
         width: 320px;
     }
+
+   
+
 }
 
 .card {
@@ -1399,7 +1407,7 @@ input:checked + .toggle-slider:before {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1100px;
             width: 100%;
             background: white;
             border-radius: var(--border-radius);
@@ -1410,7 +1418,7 @@ input:checked + .toggle-slider:before {
 
         .presales-content {
             flex: 1 1 500px;
-            padding: 60px 40px;
+            padding: 100px 20px;
             opacity: 0;
             transform: translateX(-30px);
             animation: slideInLeft 0.8s ease-out 0.3s forwards;
@@ -1418,18 +1426,19 @@ input:checked + .toggle-slider:before {
 
         .presales-image {
             flex: 1 1 500px;
-            padding: 40px;
+            padding: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             opacity: 0;
             transform: translateX(30px);
             animation: slideInRight 0.8s ease-out 0.5s forwards;
+            margin-right: 0px;
         }
 
         .presales-image img {
-            max-width: 100%;
-            height: auto;
+            width: 100% !important;
+            height: 300px;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
             transition: var(--transition);
@@ -1563,3 +1572,9 @@ input:checked + .toggle-slider:before {
             transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
         }
+
+
+       
+        /*-------------------------------*/
+
+        
