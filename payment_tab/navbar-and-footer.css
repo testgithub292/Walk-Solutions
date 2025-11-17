@@ -360,4 +360,5 @@
     align-items: center;
     border-radius: 10px;
     text-wrap: wrap;
+    width: fit-content;
 }
