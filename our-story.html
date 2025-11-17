@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Our Story | Get8Tech Payments - Innovative Financial Solutions">
+    <meta name="description" content="At Get8Tech, we combine secure banking practices with advanced technology to provide forward-thinking financial solutions. Discover how we support businesses with compliant payment services.">
+    <meta name="keywords" content="Get8Tech story, payment processing, banking solutions, retail services, ethical business practices, customer-centric, innovative financial solutions, business sustainability">
+    <meta property="og:title" content="Our Story | Get8Tech Payments">
+    <meta property="og:description" content="Learn about Get8Tech's mission to provide secure, innovative, and compliant banking and payment solutions for industries often overlooked by traditional financial institutions.">
+    <meta name="twitter:title" content="Our Story | Get8Tech Payments">
+    <meta name="twitter:description" content="Discover Get8Tech's commitment to delivering effective solutions for complex payment processing challenges with transparency, ethics, and customer focus.">
+    <title>Our Story</title>
+    <script src="component-loader.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="x-icon" sizes="any" href="images/logotab icon.jpeg">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="nav-and-footer.css">
+
+    <style>
+        :root {
+            --storypage-primary: #5737c4;
+            --storypage-secondary: #cc2eb2;
+            --storypage-accent: #6c5ce7;
+            --storypage-dark: #1a1a2e;
+            --storypage-darker: #16213e;
+            --storypage-light: #f8f9fa;
+            --storypage-text: #2d3436;
+            --storypage-text-light: #636e72;
+            --storypage-gradient: linear-gradient(135deg, var(--storypage-primary) 0%, var(--storypage-secondary) 100%);
+            --storypage-gradient-hover: linear-gradient(135deg, var(--storypage-secondary) 0%, var(--storypage-primary) 100%);
+            --storypage-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            --storypage-shadow-hover: 0 30px 60px rgba(0, 0, 0, 0.15);
+            --storypage-border-radius: 16px;
+            --storypage-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--storypage-text);
+            background-color: #ffffff;
+            line-height: 1.6;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        body.storypage-loaded {
+            opacity: 1;
+        }
+
+        /* Hero Section */
+        .storypage-hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+
+        .storypage-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: var(--storypage-gradient);
+            border-radius: 50%;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .storypage-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-hero-subtitle {
+            color: var(--storypage-secondary);
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .storypage-hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-hero-description {
+            font-size: 1.3rem;
+            color: var(--storypage-text-light);
+            max-width: 80%;
+            margin: 0 auto 35px;
+        }
+
+        /* About Section */
+        .storypage-about {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .storypage-about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-about-text {
+            padding-right: 20px;
+        }
+
+        .storypage-about-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-about-description {
+            font-size: 1.2rem;
+            color: var(--storypage-text-light);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .storypage-about-image {
+            border-radius: var(--storypage-border-radius);
+            overflow: hidden;
+            box-shadow: var(--storypage-shadow);
+            transition: var(--storypage-transition);
+        }
+
+        .storypage-about-image:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--storypage-shadow-hover);
+        }
+
+        .storypage-about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Mission & Vision Section */
+        .storypage-mission-vision {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .storypage-mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-mission-card, .storypage-vision-card {
+            background: white;
+            border-radius: var(--storypage-border-radius);
+            padding: 50px 40px;
+            box-shadow: var(--storypage-shadow);
+            transition: var(--storypage-transition);
+        }
+
+        .storypage-mission-card:hover, .storypage-vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--storypage-shadow-hover);
+        }
+
+        .storypage-mission-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--storypage-secondary);
+        }
+
+        .storypage-vision-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-mission-text, .storypage-vision-text {
+            font-size: 1.1rem;
+            color: var(--storypage-text-light);
+            line-height: 1.8;
+        }
+
+        /* Values Section */
+        .storypage-values {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .storypage-values-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .storypage-values-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-values-subtitle {
+            font-size: 1.2rem;
+            color: var(--storypage-text-light);
+        }
+
+        .storypage-values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-value-card {
+            background: white;
+            border-radius: var(--storypage-border-radius);
+            padding: 40px 30px;
+            box-shadow: var(--storypage-shadow);
+            transition: var(--storypage-transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .storypage-value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--storypage-shadow-hover);
+        }
+
+        .storypage-value-image {
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 25px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .storypage-value-title {
+            font-size: 1.4rem;
+            color: var(--storypage-secondary);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .storypage-value-description {
+            color: var(--storypage-text-light);
+            line-height: 1.7;
+        }
+
+        /* Global Reach Section */
+        .storypage-global {
+            padding: 120px 0;
+            background: #f8f9fa;
+        }
+
+        .storypage-global-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-global-image {
+            border-radius: var(--storypage-border-radius);
+            overflow: hidden;
+            box-shadow: var(--storypage-shadow);
+            transition: var(--storypage-transition);
+        }
+
+        .storypage-global-image:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--storypage-shadow-hover);
+        }
+
+        .storypage-global-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .storypage-global-text {
+            padding-left: 20px;
+        }
+
+        .storypage-global-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-global-description {
+            font-size: 1.2rem;
+            color: var(--storypage-text-light);
+            line-height: 1.8;
+        }
+
+        /* Culture Section */
+        .storypage-culture {
+            padding: 120px 0;
+            background: white;
+        }
+
+        .storypage-culture-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .storypage-culture-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: var(--storypage-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .storypage-culture-subtitle {
+            font-size: 1.2rem;
+            color: var(--storypage-text-light);
+        }
+
+        .storypage-culture-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .storypage-culture-card {
+            text-align: center;
+            transition: var(--storypage-transition);
+        }
+
+        .storypage-culture-image {
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            box-shadow: var(--storypage-shadow);
+            transition: var(--storypage-transition);
+            width: 100%;
+            height: 200px;
+        }
+
+        .storypage-culture-image:hover {
+            transform: scale(1.05);
+            box-shadow: var(--storypage-shadow-hover);
+        }
+
+        .storypage-culture-title {
+            font-size: 1.3rem;
+            color: var(--storypage-secondary);
+            font-weight: 700;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .storypage-hero-title {
+                font-size: 3.2rem;
+            }
+            
+            .storypage-about-content,
+            .storypage-mission-vision-grid,
+            .storypage-values-grid,
+            .storypage-global-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .storypage-culture-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .storypage-about-text,
+            .storypage-global-text {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .storypage-hero {
+                padding: 140px 0 80px;
+            }
+            
+            .storypage-hero-title {
+                font-size: 2.6rem;
+            }
+            
+            .storypage-hero-description {
+                font-size: 1.1rem;
+                max-width: 90%;
+            }
+            
+            .storypage-about-title,
+            .storypage-values-title,
+            .storypage-global-title,
+            .storypage-culture-title {
+                font-size: 2.2rem;
+            }
+            
+            .storypage-mission-title,
+            .storypage-vision-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .storypage-hero-title {
+                font-size: 2.2rem;
+            }
+            
+            .storypage-about-title,
+            .storypage-values-title,
+            .storypage-global-title,
+            .storypage-culture-title {
+                font-size: 1.8rem;
+            }
+            
+            .storypage-culture-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .storypage-mission-card,
+            .storypage-vision-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body style="opacity: 0; transition: opacity 0.4s ease;"> 
+    <!-- Navigation will be loaded here -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="storypage-hero">
+            <div class="storypage-hero-content">
+                <h3 class="storypage-hero-subtitle">OUR STORY</h3>
+                <h1 class="storypage-hero-title">Paving the Way into the Future</h1>
+                <p class="storypage-hero-description">Get8Tech effectively addresses banking and payment processing challenges, particularly within industries facing difficulty in securing these essential services.</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="storypage-about">
+            <div class="storypage-about-content">
+                <div class="storypage-about-text">
+                    <h2 class="storypage-about-title">More Than Just a Payments Company</h2>
+                    <p class="storypage-about-description">Our services seamlessly combine secure banking practices with state-of-the-art technological advancements, offering a distinctive and forward-thinking approach to financial solutions.</p>
+                    <p class="storypage-about-description">We are committed to improving our clients' businesses by offering them transparency and longevity in our services. Our unique culture embodies our belief that every legal business deserves to be banked.</p>
+                </div>
+                <div class="storypage-about-image">
+                    <img src="images/our story page second  image 1 .jpg.png" alt="Get8Tech Team">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission & Vision Section -->
+        <div class="storypage-mission-vision">
+            <div class="storypage-mission-vision-grid">
+                <div class="storypage-mission-card">
+                    <h2 class="storypage-mission-title">Our Mission</h2>
+                    <p class="storypage-mission-text">Our company specializes in delivering straightforward and effective solutions to the most intricate challenges faced by retail businesses across all sectors. We take pride in offering compliant and dependable banking and payment services to support our clients' diverse needs.</p>
+                </div>
+                <div class="storypage-vision-card">
+                    <h2 class="storypage-vision-title">Our Vision</h2>
+                    <p class="storypage-vision-text">To revolutionize financial services by creating inclusive, innovative solutions that empower businesses of all types to thrive in an increasingly digital economy, regardless of industry or size.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="storypage-values">
+            <div class="storypage-values-header">
+                <h2 class="storypage-values-title">Our Values</h2>
+                <p class="storypage-values-subtitle">The principles that guide everything we do</p>
+            </div>
+            <div class="storypage-values-grid">
+                <div class="storypage-value-card">
+                    <img src="images/our story page second  image 1 .jpg.png" class="storypage-value-image" alt="Responsible">
+                    <h3 class="storypage-value-title">Responsible</h3>
+                    <p class="storypage-value-description">We aim to create a more sustainable future, conducting our business ethically and driving social and environmental change.</p>
+                </div>
+                <div class="storypage-value-card">
+                    <img src="images/our story page second  image 2 .jpg.png" class="storypage-value-image" alt="Forward Thinking">
+                    <h3 class="storypage-value-title">Forward Thinking</h3>
+                    <p class="storypage-value-description">We push the envelope by servicing the industries often overlooked by the major banks and networks.</p>
+                </div>
+                <div class="storypage-value-card">
+                    <img src="images/our story page second  image 3 .jpg.png" class="storypage-value-image" alt="Customer Centric">
+                    <h3 class="storypage-value-title">Customer Centric</h3>
+                    <p class="storypage-value-description">We follow a forward-thinking approach with customer-centric strategies at the core of our operations.</p>
+                </div>
+                <div class="storypage-value-card">
+                    <img src="images/our story page second  image 4 .jpg.png" class="storypage-value-image" alt="Winning Together">
+                    <h3 class="storypage-value-title">Winning Together</h3>
+                    <p class="storypage-value-description">A shared vision where your success inspires our success, creating mutual growth and prosperity.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Reach Section -->
+        <div class="storypage-global">
+            <div class="storypage-global-content">
+                <div class="storypage-global-image">
+                    <img src="images/our story page third card image 1 .jpg.png" alt="Global Reach">
+                </div>
+                <div class="storypage-global-text">
+                    <h2 class="storypage-global-title">We Serve Customers Everywhere</h2>
+                    <p class="storypage-global-description">We work with various technology partners, merchants, membership organisations, and specialist service providers to help optimise sales and customer experience for end users.</p>
+                    <p class="storypage-global-description">Our global network ensures that businesses of all sizes can access the financial tools they need to succeed in today's competitive marketplace.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Culture Section -->
+        <div class="storypage-culture">
+            <div class="storypage-culture-header">
+                <h2 class="storypage-culture-title">Our Culture</h2>
+                <p class="storypage-culture-subtitle">The pillars that define who we are</p>
+            </div>
+            <div class="storypage-culture-grid">
+                <div class="storypage-culture-card">
+                    <img src="images/our story page third card image 1 .jpg.png" class="storypage-culture-image" alt="Team">
+                    <h3 class="storypage-culture-title">Team</h3>
+                </div>
+                <div class="storypage-culture-card">
+                    <img src="images/our story page third card image 2 .jpg.png" class="storypage-culture-image" alt="Investor">
+                    <h3 class="storypage-culture-title">Investor</h3>
+                </div>
+                <div class="storypage-culture-card">
+                    <img src="images/our story page third card image 3 .jpg.png" class="storypage-culture-image" alt="Integrity">
+                    <h3 class="storypage-culture-title">Integrity</h3>
+                </div>
+                <div class="storypage-culture-card">
+                    <img src="images/our story page third card image 4 .jpg.png" class="storypage-culture-image" alt="Community">
+                    <h3 class="storypage-culture-title">Community</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Page load transition
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('storypage-loaded');
+        });
+
+        
+  function sendMail() {
+    window.location.href = "mailto:admin@gettangi.com";
+  }
+    </script>
+</body>
+</html>

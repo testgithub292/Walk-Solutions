@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Get8Tech | Seamless Digital Banking & Global Payment Solutions">
+    <meta name="description" content="Discover Get8Tech – a future-ready FinTech platform simplifying global payments, digital banking, rewards, and commerce. Tailored for consumers, retailers, and tech. Secure. Scalable. Seamless.">
+    <meta name="keywords" content="Get8Tech, FinTech, digital banking, global payments, mobile payments, rewards platform, commerce solutions, shop builder, fraud prevention, loyalty, customer engagement, financial solutions, seamless onboarding, 24/7 support, banking access, payment technology">
+    <meta property="og:title" content="Payment Solutions Made Easy | Get8Tech">
+    <meta property="og:description" content="Get8Tech is revolutionizing finance with seamless digital banking, innovative payment options, and powerful tools for retailers and consumers. Empower your business today.">
+    <meta name="twitter:title" content="Your Future in FinTech Starts Here | Get8Tech">
+    <meta name="twitter:description" content="From mobile payments to fraud prevention and loyalty systems, Get8Tech brings tomorrow's payment solutions to your business today.">
+    <title>Get8Tech - Modern Payment Solutions</title>
+    <script src="component-loader.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="x-icon" sizes="any" href="images/logotab icon.jpeg">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylehomepage.css">
+    <link rel="stylesheet" href="nav-and-footer.css">
+        <!-- Component Loader Script -->
+</head>
+<body style="opacity: 0; transition: opacity 0.4s ease;"> 
+     <div id="navbar-container"></div>
+    <!-- Premium Navbar -->
+    <!-- <nav class="navbar navbar-expand-xl navbar-premium fixed-top">
+        <div class="container">
+            <-- Logo ->
+            <a class="navbar-brand" href="#">
+                <div class="brand-wrapper">
+                    <span class="brand-main">Get8Tech</span>
+                    <span class="brand-tagline">PAYMENTS</span>
+                </div>
+            </a>
+
+            <!- Mobile Toggle ->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+            <!- Navbar Content >
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="paymentsDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-credit-card"></i>
+                            Payments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="paymentsDropdown">
+                            <li><a class="dropdown-item" href="payment_tab/Online Payments.html">Online Payments</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/point of sale.html">Point Of Sale</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/mobile payment.html">Mobile Payments</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/acquiring.html">Acquiring</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/self checkout.html">Self Checkout</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Integration.html">Integration</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Merchant Payment Account.html">Merchant Account</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Pay By Bank.html">Pay By Bank</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Tap To Pay.html">Tap To Pay</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="commerceDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-shopping-bag"></i>
+                            Commerce
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="commerceDropdown">
+                            <li><a class="dropdown-item" href="payment_tab/Loyalt Engagemant.html">Loyalty Engagement</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Inventory Management.html">Inventory Management</a></li>
+                            <li><a class="dropdown-item" href="payment_tab/Fraud Prevention.html">Fraud Prevention</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dataDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-chart-bar"></i>
+                            Data
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dataDropdown">
+                            <li><a class="dropdown-item" href="payment_tab/Payment Analytics.html">Payment Analytics</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="our story.html">
+                            <i class="fas fa-book"></i>
+                            Our Story
+                        </a>
+                    </li>
+                </ul>
+
+                <!- CTA Button >
+                <div class="nav-actions">
+                    <a href="#" class="btn-nav-cta" onclick="sendMail()">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+    <section class="hero-premium">
+        <div class="hero-background-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span>🚀 Next Generation FinTech</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Payment Solutions 
+                            <span class="gradient-text-h">Made Simple</span>
+                        </h1>
+                        <p class="hero-description">
+                            Get8Tech is a next-gen fintech reshaping digital payments with smart, secure, and accessible solutions. 
+                            Focused on innovation and compliance, we empower merchants, reward users, and unlock growth in emerging markets—driving a bold, inclusive financial future. 
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#" class="btn-hero-primary">
+                                <span>Get Started Free</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <!-- <a href="#" class="btn-hero-secondary">
+                                <i class="fas fa-play"></i>
+                                Watch Demo
+                            </a> -->
+                        </div>
+                        
+                        <!-- <div class="hero-stats">
+                            <div class="stat-item">
+                                <h3>50K+</h3>
+                                <p>Happy Customers</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>$10B+</h3>
+                                <p>Processed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>99.9%</h3>
+                                <p>Uptime</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                  <div class="main-visual" data-aos="zoom-in" data-aos-delay="1000">
+                    <img src="images/third section image.png" class="img-fluid" height="100%" width="100%"  alt="">
+                  </div>
+                    <!-- <div class="hero-visual">
+                        <div class="visual-card card-1" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Instant Payments</h4>
+                            <p>Real-time processing</p>
+                        </div>
+                        <div class="visual-card card-2" data-aos="fade-up" data-aos-delay="600">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Bank-Level Security</h4>
+                            <p>Military grade encryption</p>
+                        </div>
+                        <div class="visual-card card-3" data-aos="fade-up" data-aos-delay="800">
+                            <i class="fas fa-globe"></i>
+                            <h4>Global Reach</h4>
+                            <p>150+ countries</p>
+                        </div>
+                        <div class="main-visual" data-aos="zoom-in" data-aos-delay="1000">
+                            <img src="images/third section image.png" alt="Get8Tech Dashboard" class="img-fluid">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section" data-aos="fade-up">
+        <div class="container">
+            <p class="trusted-label">Trusted by innovative companies worldwide</p>
+            <div class="trusted-logos">
+                <div class="logo-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/marquee2.png" alt="Company 1">
+                </div>
+                <div class="logo-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/marquee8.png" alt="Company 2">
+                </div>
+                <div class="logo-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/marquee9.png" alt="Company 3">
+                </div>
+                <div class="logo-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="images/marquee6.png" alt="Company 4">
+                </div>
+                <div class="logo-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="images/marquee7.png" alt="Company 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-premium">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Banking <span class="gradient-text">Payments Rewards</span></h2>
+                <p class="section-subtitle">We have crafted the perfect solution for the Consumer, Retailer and Technology relationship</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="features-content">
+                        <p class="features-intro">
+                            Get8Tech is a cutting-edge FinTech Company specializing in innovative financial solutions 
+                            and digital banking services with a forward-thinking approach and customer-centric strategies.
+                        </p>
+                        
+                        <div class="feature-highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h4>Enhanced Accessibility</h4>
+                                <p>Our platform seamlessly consolidates all your sales channels, customer spending habits, 
+                                and relevant data, empowering you to focus on your business's day-to-day running.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="features-list">
+                            <div class="list-item">
+                                <i class="fas fa-check"></i>
+                                <span>Real-time Analytics</span>
+                            </div>
+                            <div class="list-item">
+                                <i class="fas fa-check"></i>
+                                <span>Multi-Currency Support</span>
+                            </div>
+                            <div class="list-item">
+                                <i class="fas fa-check"></i>
+                                <span>24/7 Customer Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="features-visual">
+                        <img src="images/third section image.png" alt="Features Overview" class="img-fluid">
+                        <!-- <div class="visual-floating-element element-1">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Revenue +45%</p>
+                        </div>
+                        <div class="visual-floating-element element-2">
+                            <i class="fas fa-users"></i>
+                            <p>User Growth</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-premium">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2>Tomorrow's Solutions, <span class="gradient-text">Today</span></h2>
+                <p class="section-subtitle">For your convenience, we provide seamless commerce experiences across all channels. Our aim is to connect with your customers in every location, through every payment method, and on every device.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Payments</h3>
+                    <p>Secure and fast mobile payment solutions for modern businesses</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Fraud Prevention</h3>
+                    <p>Advanced AI-powered fraud detection and prevention systems</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Shop Builder</h3>
+                    <p>Create beautiful online stores with our professional builder tools</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Loyalty Programs</h3>
+                    <p>Engage customers with customized loyalty and reward programs</p>
+                    <a href="#" class="service-link">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Under One Roof Section -->
+<section class="features-roof-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2>Everything Under <span class="gradient-text">One Roof</span></h2>
+            <p class="section-subtitle">We don't just offer products, we provide comprehensive solutions.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <img src="images/five section image 1.png" alt="Worldwide Reach">
+                </div>
+                <h3>Worldwide Reach</h3>
+                <p>Making global payments easier with seamless international transactions.</p>
+            </div>
+            
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <img src="images/five section image 2.png" alt="Banking Access">
+                </div>
+                <h3>Near & Far Banking Access</h3>
+                <p>One single point of entry to multiple banks for increased corporate acceptance.</p>
+            </div>
+            
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <img src="images/five section image 3.png" alt="Simple Sign Up">
+                </div>
+                <h3>Simple Sign Up</h3>
+                <p>Fast and efficient onboarding with minimal documentation requirements.</p>
+            </div>
+            
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <img src="images/five section image 4.png" alt="24 Hour Support">
+                </div>
+                <h3>24 Hour Support</h3>
+                <p>Around the clock customer support for all your payment needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seamless Payment Section -->
+<section class="seamless-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2>Seamless, Secure, and <span class="gradient-text">Limitless</span></h2>
+            <p class="section-subtitle">Get8Tech Payment lets your customers pay their way, every time.</p>
+        </div>
+        
+        <!-- Fixed Marquee Section -->
+        <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <div class="marquee-item">
+                        <img src="images/marquee2.png" alt="Partner 1">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee8.png" alt="Partner 2">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee9.png" alt="Partner 3">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee6.png" alt="Partner 4">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee7.png" alt="Partner 5">
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="marquee-item">
+                        <img src="images/marquee2.png" alt="Partner 1">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee8.png" alt="Partner 2">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee9.png" alt="Partner 3">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee6.png" alt="Partner 4">
+                    </div>
+                    <div class="marquee-item">
+                        <img src="images/marquee7.png" alt="Partner 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Payment Methods Section -->
+<section class="payment-methods-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="payment-content">
+                    <h2>All the ways your <span class="gradient-text">customers pay</span></h2>
+                    <p>Expand your payment options with the ability to accept credit card payments instantly and use debit, mobile and a broad range of alternative payment types and currencies.</p>
+                    <div class="payment-features">
+                        <div class="payment-feature">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Credit & Debit Cards</span>
+                        </div>
+                        <div class="payment-feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Wallets</span>
+                        </div>
+                        <div class="payment-feature">
+                            <i class="fas fa-university"></i>
+                            <span>Bank Transfers</span>
+                        </div>
+                        <div class="payment-feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Multi-Currency Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="payment-visual">
+                    <img src="images/six card gif.gif" alt="Payment Methods" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Beyond Payments Section -->
+<section class="beyond-payments-section">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2>More Than Just a <span class="gradient-text">Payments Company</span></h2>
+            <p class="section-subtitle">We provide a unique blend of reliability and innovation through traditional secure banking combined with cutting edge technology.</p>
+        </div>
+        
+        <div class="beyond-grid">
+            <div class="beyond-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="beyond-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Bank-Grade Security</h3>
+                <p>Military-grade encryption and fraud prevention systems.</p>
+            </div>
+            
+            <div class="beyond-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="beyond-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Gain insights into customer behavior and payment trends.</p>
+            </div>
+            
+            <div class="beyond-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="beyond-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Seamless Integration</h3>
+                <p>Easy integration with your existing systems and workflows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Content Section -->
+<section class="latest-content-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Check Out Our Latest <span class="gradient-text">Content</span></h2>
+            <p class="section-subtitle">Find out what's going on in the world of payments.</p>
+        </div>
+        
+        <div class="content-grid">
+            <div class="content-card" data-aos="fade-right">
+                <div class="content-info">
+                    <h3>The Importance of Understanding Consumer Spending Habits</h3>
+                    <p>Amid the worsening financial crisis, a quarter are not confident that they know how much debt they have. Almost a quarter of individuals find managing their spending stressful.</p>
+                    <a href="#" class="content-link">
+                        Read More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="content-visual" data-aos="fade-left" data-aos-delay="200">
+                <img src="images/third section image.png" alt="Consumer Spending" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta-premium" data-aos="fade-up">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Get started today</h2>
+                <p>Learn more about 8 Tech Payments . Complete this form and we'll be in touch.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn-cta-primary">
+                        Learn More
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <!-- <a href="#" class="btn-cta-secondary">
+                        <i class="fas fa-calendar"></i>
+                        Book Demo
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <!-- <footer class="footer-premium">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Get8Tech</h3>
+                        <p>Revolutionizing digital payments with innovative solutions for businesses worldwide.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Solutions</h4>
+                            <a href="#">Online Payments</a>
+                            <a href="#">Mobile Payments</a>
+                            <a href="#">POS Systems</a>
+                            <a href="#">Fraud Prevention</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Company</h4>
+                            <a href="#">About Us</a>
+                            <a href="#">Our Story</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Press</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Support</h4>
+                            <a href="#">Help Center</a>
+                            <a href="#">Documentation</a>
+                            <a href="#">API Reference</a>
+                            <a href="#">Status</a>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h4>Contact</h4>
+                            <a href="mailto:admin@get8tech.com">admin@get8tech.com</a>
+                            <a href="#">+1 (555) 123-4567</a>
+                            <a href="#">Live Chat</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        © 2024 Get8Tech Inc. All rights reserved.
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+     <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar-premium');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fix for mobile dropdown scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown-menu');
+            
+            dropdowns.forEach(dropdown => {
+                // Set max height for dropdowns on mobile
+                if (window.innerWidth < 992) {
+                    dropdown.style.maxHeight = '300px';
+                    dropdown.style.overflowY = 'auto';
+                }
+            });
+            
+            // Recalculate on window resize
+            window.addEventListener('resize', function() {
+                dropdowns.forEach(dropdown => {
+                    if (window.innerWidth < 992) {
+                        dropdown.style.maxHeight = '300px';
+                        dropdown.style.overflowY = 'auto';
+                    } else {
+                        dropdown.style.maxHeight = '';
+                        dropdown.style.overflowY = '';
+                    }
+                });
+            });
+        });
+
+  function sendMail() {
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=phixxlabs@gmail.com", "_blank");
+  }
+
+</script>
+</body>
+</html>
