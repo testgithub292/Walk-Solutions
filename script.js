@@ -4,7 +4,7 @@ const cardData = [
         // tag: "Design",
         title: "Business Wire",
         // date: "2 days ago",
-        description: "Walk Solutions announced it has started a banking relationship with Old Glory Bank. Walk offers payment.....",
+        description: "Walk Solution announced it has started a banking relationship with Old Glory Bank. Walk offers payment.....",
         link: "Learn More",
         url: "https://www.businesswire.com/news/home/20250808782659/en/Walk-Solutions-Announces-Banking-Relationship-with-Old-Glory-Bank",
         image: "images/media-section-img-1.webp",
