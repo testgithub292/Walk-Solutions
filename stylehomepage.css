@@ -41,12 +41,13 @@ html, body {
 /* Premium Hero Section */
 .hero-premium {
     position: relative;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 75vh;
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    background: white;
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-top: 80px;
+   padding-top: 120px;
 }
 
 .hero-background-animation {
@@ -98,18 +99,20 @@ html, body {
 .hero-content {
     position: relative;
     z-index: 2;
-    color: white;
+    color: black;
 }
 
 .hero-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
+           background: var(--gradient);
+
     backdrop-filter: blur(10px);
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     font-weight: 600;
     font-size: 0.9rem;
+    color: white;
 }
 
 .hero-title {
@@ -124,7 +127,8 @@ html, body {
 
 
 .gradient-text-h {
-    background: linear-gradient(45deg, #fff, #f0f0f0);
+       background: var(--gradient);
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -152,8 +156,9 @@ html, body {
 }
 
 .btn-hero-primary {
-    background: white;
-    color: var(--primary);
+        background: var(--gradient);
+
+    color: white;
     padding: 1rem 2.5rem;
     border-radius: 50px;
     text-decoration: none;
@@ -168,7 +173,8 @@ html, body {
 .btn-hero-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
-    color: var(--primary);
+      
+
 }
 
 .btn-hero-secondary {
@@ -1028,6 +1034,10 @@ html, body {
     
     .marquee-item {
         padding: 0 2rem;
+    }
+
+    .hero-premium {
+        padding-top: 150px;
     }
 }
 
