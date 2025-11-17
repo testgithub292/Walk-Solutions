@@ -348,3 +348,16 @@
                 grid-template-columns: 1fr;
             }
         }
+
+
+        #tag-tangi{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-wrap: wrap;
+}
